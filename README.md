@@ -56,7 +56,7 @@ After that you can use [contentful-import](https://www.npmjs.com/package/content
 
 ```
 # import the data
-$ contentful-import --space-id YOUR_NEW_SPACE --contentful ./exports/contentful-export.json
+$ contentful-import --space-id YOUR_SPACE_ID --management-token YOUR_MANAGEMENT_TOKEN --content-file ./exports/contentful-export.json
 ```
 
 Adjust the SDK client to use your new space.
