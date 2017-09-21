@@ -53,17 +53,17 @@
       function setUpEventHandlers() {
         $localesContainer.addEventListener('change', (event) => {
           updateUI(event.target.value);
-        }, true)
+        }, true);
       }
 
       function updateUI(locale = 'en-US') {
         client.getEntries({
-          'sys.id' : '7EGoqR4kEwgk4c4yscUQ4I',
+          'sys.id': '7EGoqR4kEwgk4c4yscUQ4I',
           locale: locale
         }).then(response => {
           const entry = response.items[0];
           renderEntry(entry);
-        })
+        });
       }
 
       function renderEntry(entry) {
